@@ -1,2 +1,2 @@
-# invoice
-using angular, I created an invoice that allows users to add items and calculate total costs of projects
+# img gallery
+using angular, I created a img gallery that allows users to learn about differnt types of flora

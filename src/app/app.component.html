@@ -1,0 +1,27 @@
+<div id="container">
+  <h2>Floral Image Gallery</h2>
+  <h3>Surabiha / 101516256</h3>
+  <h4>Image: {{activeFlower?.id}} / {{flowers.length}}</h4>
+  <div id="row-container">
+    <div id="go-back">
+      <button id="decrement" (click)="goBack();" [disabled]="isFirstImage()" > Go Back &#8592;</button>
+    </div>
+    <div id="main-image-container">
+      <div id="main-image">
+        <img [src]="activeFlower?.path" alt="" width="1080px" height="360px">
+      </div>
+      <div class="caption">
+        <p>{{ activeCaption }}</p>
+      </div>
+    </div>
+    <div id="go-forward">
+      <button id="increment" (click)="goForward();" [disabled]="isLastImage()"> Go Forward &#8594; </button>
+    </div>
+  </div>
+  <div class="flowers">
+    <div *ngFor="let item of flowers; let i = index;" class="col-md-1"
+      (click)="setActiveFlower(item) ; setActiveIndex(i)" id="{{activeFlower==item.path ? 'active' : ''}}" [class.active]="activeIndex==i">
+      <img class="img-thumbnail" [src]="item.path" [alt]="item.alt">
+    </div>
+  </div>
+

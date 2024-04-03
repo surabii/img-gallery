@@ -1,0 +1,53 @@
+#row-container {
+    display: flex;
+    flex-direction: row;
+
+}
+
+#main-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 4px;
+    border: 1px black solid;
+}
+
+#main-image-container {
+    padding: 4px;
+    border: 1px black solid;
+    margin-bottom: 20px;
+}
+
+#container {
+    font-family: Helvetica, sans-serif;
+    padding: 0px 15px;
+    margin: 0px 75.5px;
+}
+
+.img-thumbnail {
+    width: 90px;
+    height: 90px;
+}
+
+.img-thumbnail:hover {
+    filter: opacity(50%);
+}
+
+.col-md-1 {
+    float: left;
+    padding: 0px 15px;
+}
+
+.active {
+    border: 2px red solid;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+button {
+    padding: 10px 0px;
+    text-align: center;
+}
